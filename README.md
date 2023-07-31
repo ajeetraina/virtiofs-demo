@@ -62,7 +62,6 @@ Successfully copied 1.05GB to /Users/ajeetsraina/july/virt/data/data.img
 docker cp laughing_montalcini:/data/data.img data/data.img  0.83s user 2.95s system 35% cpu 10.646 total
 ```
 
-## Conclusion
 
 Yes, I can see that the time it takes to copy the file with VirtioFS enabled is significantly faster than the time it takes to copy the file without VirtioFS enabled. This is because VirtioFS is a more efficient filesystem than traditional filesystems.
 
@@ -70,7 +69,25 @@ The time it takes to copy a file between a container and the host machine can va
 
 The difference in performance between VirtioFS and traditional filesystems can be even more pronounced when copying large files. For example, if you were to copy a 10GB file, the time it would take to copy the file with VirtioFS enabled would be significantly less than the time it would take to copy the file without VirtioFS enabled.
 
+## Testing with 10GB data
+
+## Without VirtioFS Enabled
+
+<img width="1169" alt="image" src="https://github.com/ajeetraina/virtiofs-demo/assets/313480/d336bfec-c96e-4e17-9d95-e5c98426171c">
 
 
+```
+ time docker cp compassionate_bartik:/data/data.img data/data.img
+Successfully copied 10.5GB to /Users/ajeetsraina/july/virt/data/data.img
+docker cp compassionate_bartik:/data/data.img data/data.img  8.17s user 31.14s system 35% cpu 1:51.41 total
+```
+
+## With VirtioFS Enabled
+
+```
+ time docker cp gracious_chebyshev:/data/data.img data/data.img
+Successfully copied 10.5GB to /Users/ajeetsraina/july/virt/data/data.img
+docker cp gracious_chebyshev:/data/data.img data/data.img  5.66s user 17.99s system 34% cpu 1:07.64 total
+```
 
 
