@@ -1,5 +1,18 @@
 # virtiofs-demo
-Demonstrate the VirtioFS functionality under Docker Desktop
+
+This repository compares the performance of filesystem with or without VirtioFS enabled.
+
+
+## Tested Environment
+
+- Docker Desktop for Mac
+- Mac M1 Pro
+
+## Enable VirtioFS
+
+By default, VirtioFS is enabled in the latest version of Docker Desktop. You can verify it using:
+
+<img width="1169" alt="image" src="https://github.com/ajeetraina/virtiofs-demo/assets/313480/e61afcd2-bc37-44de-a6dd-284aab09dcb6">
 
 
 ## Getting Started
