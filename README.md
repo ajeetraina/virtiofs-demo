@@ -8,6 +8,14 @@ This repository compares the performance of filesystem with or without VirtioFS 
 - Docker Desktop for Mac
 - Mac M1 Pro
 
+## Results:
+
+
+| S.No. | Data size | Time Taken(with VirtioFS enabled | Time Taken(without VirtioFS enabled |
+|--------| ----------|---------|-----------|
+|  1    |    1 GB    |  0.61s | 0.83s  |
+|  2    |    10 GB   |  5.66s | 8.17s  | 
+
 ## Enable VirtioFS
 
 By default, VirtioFS is enabled in the latest version of Docker Desktop. You can verify it using:
