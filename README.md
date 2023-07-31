@@ -19,6 +19,8 @@ Demonstrate the VirtioFS functionality under Docker Desktop
 
 ## Step 3. Build the Image
 
+Clone the repository
+
 ```
  docker build -t ajeetraina/virtiofs-demo:latest
 ```
