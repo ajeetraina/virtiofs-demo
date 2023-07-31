@@ -16,14 +16,15 @@ This repository compares the performance of filesystem with or without VirtioFS 
 |  1    |    1 GB    |  0.61s | 0.83s  |
 |  2    |    10 GB   |  5.66s | 8.17s  | 
 
+
+
+## Getting Started
+
 ## Enable VirtioFS
 
 By default, VirtioFS is enabled in the latest version of Docker Desktop. You can verify it using:
 
 <img width="1169" alt="image" src="https://github.com/ajeetraina/virtiofs-demo/assets/313480/e61afcd2-bc37-44de-a6dd-284aab09dcb6">
-
-
-## Getting Started
 
 ## Step 1. Create a directory
 
@@ -31,7 +32,7 @@ By default, VirtioFS is enabled in the latest version of Docker Desktop. You can
  mkdir data
 ```
 
-## Step 2.  Create a file in the directory that contains a large amount of data
+## Step 2.  Create a file in the directory that contains a large amount of data(1GB random data)
 
 ```
  dd if=/dev/zero of=data/data.img bs=1M count=1000
