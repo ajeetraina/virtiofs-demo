@@ -1,6 +1,8 @@
+# Create a Dockerfile that mounts the directory into the container
 FROM ubuntu:latest
 
-RUN apt update && \
-    apt install -y mysql-client time
+# Mount the data directory into the container
+VOLUME /data
 
-CMD ["time", "mysqlimport", "-u", "root", "-p", "password", "/data/database.sql"]
+# Start a bash shell
+CMD ["bash"]
